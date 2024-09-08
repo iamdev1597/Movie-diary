@@ -1,10 +1,23 @@
 ﻿@model List<Category>
-<h2>Category List</h2>
+<div class="container">
+    <div class="row pt-6 pb-3">
+        <div class=" col-6">
+            <h2 class="text-primary">
+                All Movies
+            </h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Category" asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-plus-circle"></i> Create New Movie
+            </a>
+        </div>
+
+    </div>
 <table class="table table-bordered table-striped">
     <thead>
         <tr>
             <th>Category Name</th>
-            <th>Sort Order</th>
+            <th>Display Order</th>
         </tr>
     </thead>
     <tbody>
@@ -17,3 +30,4 @@
         }
     </tbody>
 </table>
+</div>
